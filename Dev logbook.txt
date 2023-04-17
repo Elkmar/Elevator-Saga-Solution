@@ -1,0 +1,49 @@
+Fonctionnement idéal d'un ascenseur que j'imagine :
+
+- L'ascenseur est au repos à l'étage où il s'est arrêté. On peut le positionner à un étage médian pour réduire le temps d'attente.
+-Un client appelle l'ascenseur, celui-ci se met en marche puis indique la direction.
+- Les commandes à l'intérieur de l'ascenseur doivent passer avant celles à l'extérieur.
+- Si une destination ultérieure se trouve sur le trajet, l'ascenseur doit s'arrêter à ces étages.
+
+Fonctionnement actuel de l'ascenseur :
+
+- L'ascenseur est au repos à l'étage où il s'est arrêté, et se dirige vers l'étage 2, qui est au milieu.
+- Un client appelle l'ascenseur, celui-ci se met en marche vers la destination indiquée.
+- Les commandes à l'intérieur de l'ascenseur passent avant celles à l'extérieur.
+- L'ascenseur ne s'arrête pas aux étages intermédiaires.
+
+Journal :
+
+17/04/2023
+
+- J'ai pris un peu de temps pour comprendre comment fonctionne https://play.elevatorsaga.com/, j'ai eu du mal avec la documentation qui est pourtant simple.
+- J'ai commencé par faire aller l'ascenseur à chaque étage en boucle, cela m'a permis de passer les deux premiers niveaux.
+- J'ai essayé de commencer à utiliser les indications de direction et j'ai perdu deux heures dans le vent, j'avais du mal à déboguer.
+- J'ai repris à 0 et j'ai allumé ChatGPT, je lui ai indiqué que les passagers de l'ascenseur devraient avoir priorité sur les gens à l'extérieur, j'ai donc créé deux piles.
+- Cela m'a permis d'aller jusqu'au niveau 4.
+- Avant de jouer avec plusieurs ascenseurs, j'aimerais d'abord améliorer la gestion avec un seul ascenseur, notamment en ajoutant les arrêts intermédiaires mais aussi en essayant de retravailler sur les indications de direction.
+
+Ideal elevator operation I envision:
+
+- The elevator is at rest on the floor where it stopped. It can be positioned at a middle floor to reduce waiting time.
+- A customer calls the elevator, it starts up and indicates the direction.
+- Commands inside the elevator must take precedence over those outside.
+- If a later destination is on the way, the elevator must stop at these floors.
+
+Current elevator operation:
+
+- The elevator is at rest on the floor where it stopped and heads to the 2nd floor, which is in the middle.
+- A customer calls the elevator, and it starts moving towards the indicated destination.
+- Commands inside the elevator take precedence over those outside.
+- The elevator does not stop at intermediate floors.
+
+Journal:
+
+17/04/2023
+
+- It took me some time to understand how https://play.elevatorsaga.com/ works, as I struggled with the simple documentation.
+- I started by making the elevator go to each floor in a loop, which allowed me to pass the first two levels.
+- I tried to start using the direction indicators and wasted two hours, as I had trouble debugging.
+- I started from scratch and turned on ChatGPT. I indicated that the elevator passengers should take priority over people outside, so I created two stacks
+- This allowed me to reach level 4.
+- Before playing with multiple elevators, I would first like to improve the management with a single elevator, including adding intermediate stops and also trying to rework the direction indicators.
