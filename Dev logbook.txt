@@ -23,6 +23,11 @@ Journal :
 - Cela m'a permis d'aller jusqu'au niveau 4.
 - Avant de jouer avec plusieurs ascenseurs, j'aimerais d'abord améliorer la gestion avec un seul ascenseur, notamment en ajoutant les arrêts intermédiaires mais aussi en essayant de retravailler sur les indications de direction.
 
+18/04/2023 
+
+- Je vais commencer à essayer de rajouter l'arrêt aux étages intermédiaires 
+- J'ai ajouté un event listener qui permet de vérifier si l'étage qui va être passé n'est pas dans la liste des étages où les passagers doivent s'arrêter 
+
 Ideal elevator operation I envision:
 
 - The elevator is at rest on the floor where it stopped. It can be positioned at a middle floor to reduce waiting time.
@@ -47,3 +52,5 @@ Journal:
 - I started from scratch and turned on ChatGPT. I indicated that the elevator passengers should take priority over people outside, so I created two stacks
 - This allowed me to reach level 4.
 - Before playing with multiple elevators, I would first like to improve the management with a single elevator, including adding intermediate stops and also trying to rework the direction indicators.
+
+18
