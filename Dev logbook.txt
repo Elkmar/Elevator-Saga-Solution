@@ -1,16 +1,18 @@
-Fonctionnement idéal d'un ascenseur que j'imagine :
+Français : 
+
+Fonctionnement idéal des ascenseurs que j'imagine :
 
 - L'ascenseur est au repos à l'étage où il s'est arrêté. On peut le positionner à un étage médian pour réduire le temps d'attente.
--Un client appelle l'ascenseur, celui-ci se met en marche puis indique la direction.
+- Un client appelle un ascenceur, celui qui a le moins d'étapes à faire l'ajoute à sa file, celui-ci se met en marche 
 - Les commandes à l'intérieur de l'ascenseur doivent passer avant celles à l'extérieur.
-- Si une destination ultérieure se trouve sur le trajet, l'ascenseur doit s'arrêter à ces étages.
+- Si une destination ultérieure de la file intérieure se trouve sur le trajet, l'ascenseur doit s'arrêter à ces étages.
 
 Fonctionnement actuel de l'ascenseur :
 
-- L'ascenseur est au repos à l'étage où il s'est arrêté, et se dirige vers l'étage 2, qui est au milieu.
-- Un client appelle l'ascenseur, celui-ci se met en marche vers la destination indiquée.
-- Les commandes à l'intérieur de l'ascenseur passent avant celles à l'extérieur.
-- L'ascenseur aux étages intermédiaires quand un client l'a demandé.
+- L'ascenseur est au repos à l'étage où il s'est arrêté. On peut le positionner à un étage médian pour réduire le temps d'attente.
+- Un client appelle un ascenceur, celui qui a le moins d'étapes à faire l'ajoute à sa file, celui-ci se met en marche 
+- Les commandes à l'intérieur de l'ascenseur doivent passer avant celles à l'extérieur.
+- Si une destination ultérieure de la file intérieure se trouve sur le trajet, l'ascenseur doit s'arrêter à ces étages.
 
 Journal :
 
@@ -31,21 +33,27 @@ Journal :
 - J'ai créé une nouvelle branche pour les indicateurs, malheureusement c'est une galère parce que mon indicateur ne s'active qu'une fois l'ascenceur en marche, du coup les utilisateurs ne rentrent pas parce qu'ils ne savent pas d'avance dans quelle direction l'ascenceur va aller 
 
 20/04/2023 
-- Abandon des indicateurs, le fonctionnement est trop chiant 
+- Abandon des indicateurs, le fonctionnement est trop chiant
+- Prise en compte du fonctionnement avec plusieurs ascenceurs, une fois la logique appréhendée, j'ai utilisé ChatGPT pour aller plus vite  
+- Challenge 5 pas passé, il va falloir que je commence à prendre en compte la capacité des ascenceurs 
 
-Ideal elevator operation I envision:
+___________________________________________________________________________________________________________
 
-- The elevator is at rest on the floor where it stopped. It can be positioned at a middle floor to reduce waiting time.
-- A customer calls the elevator, it starts up and indicates the direction.
-- Commands inside the elevator must take precedence over those outside.
-- If a later destination is on the way, the elevator must stop at these floors.
+English : 
+
+Ideal elevator operation that I imagine:
+
+- The elevator is at rest on the floor where it stopped. It can be positioned at a mid-floor to reduce waiting time.
+- A customer calls an elevator, the one with the least number of stops adds the customer to its queue, and the elevator starts moving.
+- Commands inside the elevator should be given priority over those outside.
+- If a later destination in the internal queue is on the way, the elevator should stop at those floors.
 
 Current elevator operation:
 
-- The elevator is at rest on the floor where it stopped and heads to the 2nd floor, which is in the middle.
-- A customer calls the elevator, and it starts moving towards the indicated destination.
-- Commands inside the elevator take precedence over those outside.
-- The elevator does stop at intermediate floors if.
+- The elevator is at rest on the floor where it stopped. It can be positioned at a mid-floor to reduce waiting time.
+- A customer calls an elevator, the one with the least number of stops adds the customer to its queue, and the elevator starts moving.
+- Commands inside the elevator should be given priority over those outside.
+- If a later destination in the internal queue is on the way, the elevator should stop at those floors.
 
 Journal:
 
@@ -68,4 +76,5 @@ Journal:
 20/04/2023 
 
 - Gave up for now on the indicators, they're too annoying 
-
+- Taking into account the operation with multiple elevators, once the logic was understood, I used ChatGPT to speed up the process.
+- Challenge 5 not passed, I'll have to start taking into account the capacity of the elevators.
