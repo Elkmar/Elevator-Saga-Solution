@@ -10,7 +10,7 @@ Fonctionnement actuel de l'ascenseur :
 - L'ascenseur est au repos à l'étage où il s'est arrêté, et se dirige vers l'étage 2, qui est au milieu.
 - Un client appelle l'ascenseur, celui-ci se met en marche vers la destination indiquée.
 - Les commandes à l'intérieur de l'ascenseur passent avant celles à l'extérieur.
-- L'ascenseur ne s'arrête pas aux étages intermédiaires.
+- L'ascenseur aux étages intermédiaires quand un client l'a demandé.
 
 Journal :
 
@@ -27,6 +27,11 @@ Journal :
 
 - Je vais commencer à essayer de rajouter l'arrêt aux étages intermédiaires 
 - J'ai ajouté un event listener qui permet de vérifier si l'étage qui va être passé n'est pas dans la liste des étages où les passagers doivent s'arrêter 
+- Push de la nouvelle version
+- J'ai créé une nouvelle branche pour les indicateurs, malheureusement c'est une galère parce que mon indicateur ne s'active qu'une fois l'ascenceur en marche, du coup les utilisateurs ne rentrent pas parce qu'ils ne savent pas d'avance dans quelle direction l'ascenceur va aller 
+
+20/04/2023 
+- Abandon des indicateurs, le fonctionnement est trop chiant 
 
 Ideal elevator operation I envision:
 
@@ -40,7 +45,7 @@ Current elevator operation:
 - The elevator is at rest on the floor where it stopped and heads to the 2nd floor, which is in the middle.
 - A customer calls the elevator, and it starts moving towards the indicated destination.
 - Commands inside the elevator take precedence over those outside.
-- The elevator does not stop at intermediate floors.
+- The elevator does stop at intermediate floors if.
 
 Journal:
 
@@ -53,4 +58,14 @@ Journal:
 - This allowed me to reach level 4.
 - Before playing with multiple elevators, I would first like to improve the management with a single elevator, including adding intermediate stops and also trying to rework the direction indicators.
 
-18
+18/04/2023
+
+- I am going to start trying to add stops at intermediate floors.
+- I added an event listener that checks if the upcoming floor is not on the list of floors where passengers need to stop.
+- Pushed the new version.
+- I created a new branch for the indicators, but unfortunately it's a hassle because the indicator only activates once the elevator is in motion. As a result, users don't enter because they don't know in advance which direction the elevator will go.
+
+20/04/2023 
+
+- Gave up for now on the indicators, they're too annoying 
+
