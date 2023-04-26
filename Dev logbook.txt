@@ -40,6 +40,8 @@ Journal :
 26/04/2023 
 
 - Je vais essayer de prendre en compte le weight ratio pour que des ascenceurs pleins ne s'arrête pas pour les utilisateurs 
+- J'ai ajouté un check du weight ratio pour qu'un ascenceur ne s'arrête pas pour un call intermédiaire si il est plein 
+- J'ai amélioré la fonction d'arrêt intermédiaire, les étages n'étaient pas supprimés de la liste d'attente 
 
 ___________________________________________________________________________________________________________
 
@@ -83,3 +85,8 @@ Journal:
 - Taking into account the operation with multiple elevators, once the logic was understood, I used ChatGPT to speed up the process.
 - Challenge 5 not passed, I'll have to start taking into account the capacity of the elevators.
 
+26/04/2023 
+
+- I will try to take into account the weight ratio so that full elevators do not stop for users.
+- I added a check for the weight ratio so that an elevator does not stop for an intermediate call if it is full.
+- I improved the intermediate stop function, as the floors were not removed from the waiting list.
