@@ -29,7 +29,7 @@
                 var closestElevator;
                 queues.forEach(function(queue, i) {
                     var dist = elevators[i].destinationQueue.length + queue.external.length;
-                    if (dist < minDist) {
+                    if (dist < minDist && elevators[i].loadFactor() < 1) {
                         minDist = dist;
                         closestElevator = i;
                     }
@@ -71,6 +71,12 @@
                 var queue = queues[i];
                 if (queue.internal.includes(floorNum)) {
                     elevator.goToFloor(floorNum, true);
+                    // Remove the floor from the internal queue, it was not done before
+                    queue.internal.splice(queue.internal.indexOf(floorNum), 1);
+                    // Remove the floor from the external queue if it's there
+                    if (queue.external.includes(floorNum)) {
+                        queue.external.splice(queue.external.indexOf(floorNum), 1);
+                    }
                 }
             });
         });

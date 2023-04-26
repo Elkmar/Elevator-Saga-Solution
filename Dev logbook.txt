@@ -37,6 +37,10 @@ Journal :
 - Prise en compte du fonctionnement avec plusieurs ascenceurs, une fois la logique appréhendée, j'ai utilisé ChatGPT pour aller plus vite  
 - Challenge 5 pas passé, il va falloir que je commence à prendre en compte la capacité des ascenceurs 
 
+26/04/2023 
+
+- Je vais essayer de prendre en compte le weight ratio pour que des ascenceurs pleins ne s'arrête pas pour les utilisateurs 
+
 ___________________________________________________________________________________________________________
 
 English : 
@@ -78,3 +82,4 @@ Journal:
 - Gave up for now on the indicators, they're too annoying 
 - Taking into account the operation with multiple elevators, once the logic was understood, I used ChatGPT to speed up the process.
 - Challenge 5 not passed, I'll have to start taking into account the capacity of the elevators.
+
